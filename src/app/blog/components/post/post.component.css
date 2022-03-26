@@ -1,0 +1,11 @@
+ul.tags {
+    list-style-type: none;
+    display: flex;
+   padding: 0;
+   font-size: small;
+}
+.tags li {
+    padding-right: 0.5em;
+    cursor: pointer;
+    text-decoration: underline;
+}

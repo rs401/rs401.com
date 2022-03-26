@@ -1,0 +1,18 @@
+<div>
+    <h2>{{ post.title }}</h2>
+    <h4>{{ post.blurb }}</h4>
+    <div>
+        <ul class="tags">
+            <li *ngFor="let tag of post.tags" routerLink="/blog/tag/{{tag}}">{{tag}}</li>
+        </ul>
+    </div>
+    <hr>
+    <mat-card>
+        <markdown 
+            lineNumbers
+            ngPreserveWhitespaces
+            [data]="this.md"
+        ></markdown>
+
+    </mat-card>
+</div>

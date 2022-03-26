@@ -1,0 +1,24 @@
+img {
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  width: 100%;
+  height: auto;
+  object-fit: scale-down;
+  filter: grayscale(100%);
+}
+
+.profile-img {
+  width: 300px;
+}
+
+mat-card {
+  margin: 3em;
+  padding: 3em;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.header {
+  text-align: center;
+}

@@ -1,0 +1,12 @@
+<div class="project">
+  <div>
+    <h2>{{ theRepo["name"] }}</h2>
+  </div>
+  <div>{{ theRepo["description"] }}</div>
+  <a href="{{ theRepo['html_url'] }}" target="_blank">
+    <div class="overlay">
+      <h2>Stars</h2>
+      ⭐ {{ theRepo["stargazers_count"] }}
+    </div>
+  </a>
+</div>

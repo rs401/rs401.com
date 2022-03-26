@@ -1,0 +1,21 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Projects</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-grid-list cols="3" rowHeight="200px">
+            <mat-grid-tile
+                *ngFor="let repo of repos"
+                colspan="1"
+                rowspan="1"
+            >
+            <app-project style="height: 100%;width: 100%;" [theRepo]="repo"></app-project>
+            <!--
+                <mat-card>
+                    {{ repo['name'] }}
+                </mat-card>
+            -->
+            </mat-grid-tile>
+        </mat-grid-list>
+    </mat-card-content>
+</mat-card>

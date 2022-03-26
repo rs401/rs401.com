@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* pre {
+  padding: 1em;
+  background-color: #333;
+  color: #fff;
+}
+
+:not(pre) > code {
+  background-color: #333;
+  color: #fff;
+} */
+
+/* :not(pre) > code::before {
+    content: "\00a0";
+}
+
+:not(pre) > code::after {
+    content: " ";
+} */
