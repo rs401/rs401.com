@@ -15,14 +15,14 @@ export class BlogService {
       file: 'one.md',
       tags: ['Angular', 'github api'],
     },
-    {
-      id: 'ab75bd09-817e-457e-a771-7857d34ded4c',
-      date: 'Fri Mar 25 2022',
-      title: 'Second post',
-      blurb: 'The Second post of potentially many.',
-      file: 'two.md',
-      tags: ['first tag', 'second tag'],
-    },
+    // {
+    //   id: 'ab75bd09-817e-457e-a771-7857d34ded4c',
+    //   date: 'Fri Mar 25 2022',
+    //   title: 'Second post',
+    //   blurb: 'The Second post of potentially many.',
+    //   file: 'two.md',
+    //   tags: ['first tag', 'second tag'],
+    // },
   ];
 
   constructor() { }

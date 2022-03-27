@@ -12,8 +12,6 @@ img {
 }
 
 mat-card {
-  margin: 3em;
-  padding: 3em;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -21,4 +19,9 @@ mat-card {
 
 .header {
   text-align: center;
+}
+
+.mat-icon {
+    height: 32px;
+    width: 32px;
 }
