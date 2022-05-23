@@ -13,10 +13,10 @@ const PinnedProjects: FC<IPinnedProjectsProps> = (props) => {
         <>
           {props.projects.map((projGroup: any[], index: number) => {
             return (
-              <Row className="gx-2" key={index}>
+              <Row style={{display: "flex"}} className="gx-2" key={index}>
                 {projGroup.map((project: any, index: number) => {
                   return (
-                    <Col lg={4} key={index}>
+                    <Col style={{display: "flex"}} lg={4} key={index}>
                       <PinnedProject project={project} />
                     </Col>
                   );
