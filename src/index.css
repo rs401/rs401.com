@@ -18,16 +18,76 @@ code {
 }
 
 a {
-    color: white;
+  color: white;
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 a:hover {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.meta-info {
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 70%;
+  border: 1px solid #eee;
+}
+
+.meta-info .post-title {
+  font-size: 2rem;
+}
+
+.meta-info .post-tags {
+  font-weight: lighter;
+  font-size: smaller;
+}
+
+.meta-info .post-blurb {
+    margin-top: 1rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.meta-info a {
+    color: #405566;
+}
+
+.meta-info a:hover {
+    color: #282c34;
+}
+
+.pinned-footer a {
+    color: #799ab4 !important;
+}
+
+.pinned-footer a:hover {
+    color: #405566 !important;
+}
+
+.bg-dank {
+    background-color: #405566 !important;
+    font-size: small !important;
+}
+
+.bg-dank a {
+    color: white;
+    text-decoration: none;
+}
+
+.bg-dank h6 {
+    display: inline !important;
+}
+
+blockquote {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-left: 2rem;
+    line-height: 3rem;
 }

@@ -1,7 +1,5 @@
 import { FC } from "react";
 import Card from "react-bootstrap/Card";
-import Carousel from "react-bootstrap/Carousel";
-import RootPage from "./root";
 
 // visual c# certificate: https://www.parchment.com/u/award/bf48477de294dd78dc0169a452fdb425
 // soft dev certificate: https://www.parchment.com/u/award/160054c540146f6fae863ce3725957df
@@ -33,7 +31,7 @@ const achievements: any[] = [
 
 const AboutMe: FC = () => {
   return (
-    <RootPage>
+    <div>
       <Card bg="dark" text="white">
         <Card.Header as="h5" className="text-center">
           Rich Stadnick
@@ -108,21 +106,10 @@ const AboutMe: FC = () => {
                 </Card.Text>
               </Card.Body>
             </Card>
-            // <Carousel.Item key={index}>
-            //   <img
-            //     style={{objectFit: "cover"}}
-            //     src={achieve.img}
-            //     alt={achieve.name}
-            //   />
-            //   <Carousel.Caption>
-            //     <h5>{achieve.name}</h5>
-            //     <a rel="noreferrer" target="_blank" href={achieve.url}>{achieve.url}</a>
-            //   </Carousel.Caption>
-            // </Carousel.Item>
           );
         })}
       </div>
-    </RootPage>
+    </div>
   );
 };
 export default AboutMe;

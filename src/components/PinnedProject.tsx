@@ -12,7 +12,7 @@ const PinnedProject: FC<IPinnedProjectProps> = (props) => {
         <Card.Img style={{width: "100%"}}  src={props.project.imageUrl} />
         <Card.Text>{props.project.description}</Card.Text>
       </Card.Body>
-      <Card.Footer className="d-flex justify-content-around">
+      <Card.Footer className="d-flex justify-content-around pinned-footer">
           <Card.Link target="_blank" rel="noreferrer" href={props.project.githubUrl}>Code</Card.Link>
           <Card.Link target="_blank" rel="noreferrer" href={props.project.demoUrl}>Demo</Card.Link>
       </Card.Footer>

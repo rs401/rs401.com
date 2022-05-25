@@ -1,6 +1,5 @@
 import { FC, useState, useEffect } from "react";
 import HttpService from "../services/HttpService";
-import RootPage from "./root";
 import PinnedProjects from "../components/PinnedProjects";
 import GetPinnedRepos from "../services/PinnedRepoData";
 
@@ -49,7 +48,7 @@ const Projects: FC = () => {
   }, [githubUrl]);
 
   return (
-    <RootPage>
+    <div>
       <PinnedProjects projects={projects} />
       {repos && repos.length !== 0 ? (
         <div>
@@ -60,7 +59,7 @@ const Projects: FC = () => {
       ) : (
         <>Loading...</>
       )}
-    </RootPage>
+    </div>
   );
 };
 
