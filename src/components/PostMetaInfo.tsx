@@ -20,7 +20,7 @@ const PostMetaInfo: FC<IPostMetaInfoProps> = ({ post }) => {
   });
 
   return (
-    <div className="meta-info">
+    <div className="meta-info shadow rounded border">
       <Link to={`/post/${post.id}`}>
         <h3>{post.title}</h3>
       </Link>

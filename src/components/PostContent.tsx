@@ -25,7 +25,7 @@ const PostContent: FC = () => {
   return (
     <Container>
       {post ? (
-        <Card>
+        <Card className="p-lg-2">
           <Card.Body>
             <Card.Title>{post.title}</Card.Title>
             <Card.Subtitle className="mb-2 text-muted">
