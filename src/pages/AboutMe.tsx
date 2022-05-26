@@ -1,5 +1,7 @@
-import { FC } from "react";
+import { FC, useEffect } from "react";
 import Card from "react-bootstrap/Card";
+import { logEvent } from "firebase/analytics";
+import { analytics } from "../firebase-config";
 
 // visual c# certificate: https://www.parchment.com/u/award/bf48477de294dd78dc0169a452fdb425
 // soft dev certificate: https://www.parchment.com/u/award/160054c540146f6fae863ce3725957df
@@ -30,6 +32,10 @@ const achievements: any[] = [
 ];
 
 const AboutMe: FC = () => {
+    useEffect(() => {
+      logEvent(analytics, "about_me_visited");
+    }, [])
+    
   return (
     <div>
       <Card bg="dark" text="white">

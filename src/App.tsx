@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import Container from "react-bootstrap/Container";
 import MyNav from "./components/Nav";
 import Footer from "./components/Footer";

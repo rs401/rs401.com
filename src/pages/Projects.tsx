@@ -2,6 +2,9 @@ import { FC, useState, useEffect } from "react";
 import HttpService from "../services/HttpService";
 import PinnedProjects from "../components/PinnedProjects";
 import GetPinnedRepos from "../services/PinnedRepoData";
+import Spinner from "react-bootstrap/Spinner";
+import { logEvent } from "firebase/analytics";
+import { analytics } from "../firebase-config";
 
 const projects: any[][] = GetPinnedRepos();
 
@@ -14,6 +17,7 @@ const Projects: FC = () => {
   const githubUrl: string = process.env.REACT_APP_GITHUB_URL as string;
 
   useEffect(() => {
+      logEvent(analytics, "projects_visited");
     if (
       // Check if we have the repos local
       localStorage.getItem("repos") !== undefined &&
@@ -45,7 +49,7 @@ const Projects: FC = () => {
       localStorage.setItem("repos_exp", String(exp));
       console.log("repos_exp: " + localStorage.getItem("repos_exp"));
     });
-  }, [githubUrl]);
+  }, [githubUrl, repos]);
 
   return (
     <div>
@@ -57,7 +61,7 @@ const Projects: FC = () => {
           })}
         </div>
       ) : (
-        <>Loading...</>
+        <Spinner animation="border" variant="secondary" />
       )}
     </div>
   );
